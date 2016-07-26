@@ -3,6 +3,9 @@ MAINTAINER Liam Galvin
 
 WORKDIR /srv
 
+RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+RUN rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+
 RUN yum install -y -q epel-release; yum clean all
 RUN yum install -y -q ant; yum clean all
 RUN yum install -y -q php56w; yum clean all
