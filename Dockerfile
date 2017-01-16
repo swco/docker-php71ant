@@ -5,6 +5,7 @@ WORKDIR /srv
 
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+RUN wget -O /etc/yum.repos.d/epel6.repo https://mirror.openshift.com/mirror/epel/epel6.repo
 
 RUN yum install -y -q epel-release; yum clean all
 RUN yum install -y -q ant; yum clean all
