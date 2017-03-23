@@ -1,4 +1,4 @@
-FROM centos:centos6.6
+FROM centos:6
 MAINTAINER Liam Galvin
 
 WORKDIR /srv
