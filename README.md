@@ -1,6 +1,6 @@
-# docker-php70ant
+# docker-php71ant
 
-Dockerfile to run PHP 7.0 dependent ant commands.
+Dockerfile to run PHP 7.1 dependent ant commands.
 
 ## Usage
 
